@@ -363,7 +363,7 @@ class SlideMenu {
           Object.assign(this.menuElem.style, {
             left: 0,
             right: 'auto',
-            transform: 'translateX(-100%)',
+            transform: 'translateX(-150%)',
           });
           break;
         default:
