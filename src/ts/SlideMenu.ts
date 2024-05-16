@@ -104,7 +104,7 @@ class SlideMenu {
     } else if (show) {
       offset = 0;
     } else {
-      offset = this.options.position === MenuPosition.Left ? '-100%' : '100%';
+      offset = this.options.position === MenuPosition.Left ? '-150%' : '150%';
     }
 
     this.isOpen = show;
@@ -218,7 +218,7 @@ class SlideMenu {
     // Trigger the animation only if currently on different level
     if (level >= 0 && level !== this.level) {
       this.level = level;
-      this.moveSlider(this.wrapperElem, -this.level * 100);
+      this.moveSlider(this.wrapperElem, -this.level * 150);
     }
 
     parentUl.forEach((ul: HTMLElement) => {
@@ -320,7 +320,7 @@ class SlideMenu {
       return;
     }
 
-    const offset = (this.level + dir) * -100;
+    const offset = (this.level + dir) * -150;
 
     if (anchor && anchor.parentElement !== null && dir === Direction.Forward) {
       const ul = anchor.parentElement.querySelector('ul');
